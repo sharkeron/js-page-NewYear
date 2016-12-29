@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'Open Sans regular', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+
+	src:  url('../fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Open Sans bold', sans-serif;
+	font-weight: bold;
+	font-style: normal;
+
+	src:  url('../fonts/open-sans/OpenSans-Bold.ttf') format('truetype');
+}
+
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+
+	font-family: 'Open Sans regular', sans-serif;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.container{
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+.text-center{
+	text-align: center;
+}

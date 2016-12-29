@@ -1,0 +1,282 @@
+main{
+	background: url(../img/Christmas-Tree-Background-Texture-2.png);
+}
+
+.image-slider{
+	overflow: hidden;
+}
+.image-slider .image-slide{
+	height: 400px;
+
+	background-position: center;
+	background-size: cover;
+}
+.image-slider .slick-prev, .image-slider .slick-next{
+	z-index: 999;
+
+	transition: all.3s ease-in-out;
+}
+.image-slider:hover .slick-prev{
+	left: 25px;
+}
+.image-slider:hover .slick-next{
+	right: 25px;
+}
+.image-slider .slick-prev:before, .image-slider .slick-next:before{
+	color: #304FFE;
+}
+.slick-dots {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+.slick-dots li {
+	display: inline-block;
+	margin: 10px;
+	border: 3px solid #0DB50D;
+	padding: 5px;
+	border-radius: 50%;
+	transition: all 0.2s ease-in-out;
+}
+
+.slick-dots button {
+	display: block;
+	padding: 0;
+	outline: 0;
+	font-size: 0;
+	border-radius: 50%;
+	border: 0;
+	width: 7px;
+	height: 7px;
+	background-color: red;
+}
+
+.slick-dots button:before {
+	content: none;
+}
+
+.slick-dots li.slick-active,
+.slick-dots li:hover {
+	border-color: red;
+}
+
+.tabs-block{
+	background: #FF0000;
+}
+.tabs-navigation{
+	background: #0DB50D;
+}
+.tabs-navigation ul{
+	margin: 0;
+	padding: 0;
+
+	font-size: 0;
+}
+.tabs-navigation li{
+	display: inline-block;
+}
+.tabs-navigation li a{
+	display: inline-block;
+
+	padding: 10px 15px;
+
+	text-decoration: none;
+
+	color: red;
+
+	font-size: 18px;
+}
+.tabs-navigation li.active a, .tabs-navigation li a:hover{
+	color: #0DB50D;
+	background: red;
+}
+.tabs-content{
+	background: red;
+	color: #0DB50D;
+}
+.tabs-content .tab-content{
+	display: none;
+
+	padding: 10px;
+}
+.tabs-content .tab-content.active{
+	display: block;
+}
+.tabs-prev, .tabs-next{
+	margin: 5px;
+	padding: 5px 10px;
+
+	cursor: pointer;
+
+	color: red;
+	border: none;
+	background: #0DB50D;
+
+	font-family: 'open_sansbold';
+}
+.masonry-gutter{
+	width: .5%;
+}
+.masonry-sizer, .masonry{
+	width: 49.8%;
+}
+.masonry{
+	margin-bottom: 0%;
+}
+.masonry.masonry-big{
+	width: 100%;
+}
+.masonry img{
+	width: 100%;
+}
+
+@media screen and (min-width: 1000px){
+	.masonry-sizer, .masonry{
+		width: 33.15%;
+	}
+	.masonry-gutter{
+		width: .33%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.masonry-sizer, .masonry{
+		width: 100%;
+	}
+	.masonry-gutter{
+		width: 0;
+	}
+}
+
+#map{
+	height: 300px;
+}
+
+.map-section{
+	margin: 0 auto;
+}
+
+.map-title{
+	padding: 5px;
+
+	text-align: center;
+
+	color: red;
+	background: #0DB50D;
+
+	font-size: 32px;
+}
+
+.map-title h3{
+	opacity: .87;
+
+	font-family: 'Open Sans bold', sans-serif;
+}
+
+.location-form{
+	display: none;
+
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+
+	p{
+		margin: 0;
+	}
+}
+
+.showMyLocation{
+	margin: 0 auto;
+	padding: 15px;
+	font-size: 16px;
+
+	text-align: center;
+
+	color: #0DB50D;
+	border: none;
+	outline: none;
+	background: red;
+	margin-top: 10px;
+
+
+	&:hover{
+		background: #0DB50D;
+		color: red;
+	}
+}
+
+.showMyLocation + h3{
+	color: red;
+	margin: 10px;
+}
+
+.simpleselect{
+	width: 100%;
+	color: #0DB50D;
+
+	.options{
+		.option{
+			&.active{
+				background: red;
+			}
+		}
+	}
+
+	&.active{
+		.options{
+			width: 100%;
+		}
+	}
+}
+
+.location-form form label,
+.location-form form input,
+.location-form form select{
+	display: inline-block;
+	color: #0DB50D;
+	width: 100%;
+	padding: 5px 10px;
+
+	font-family: 'Open Sans bold', sans-serif;
+}
+.location-form form label{
+	color: red;
+}
+
+.location-form form input,
+.location-form form select{
+	padding: 10px;
+}
+
+#map-check{
+	width: 20px;
+}
+
+#map-btn{
+	margin: 0 auto;
+	padding: 15px;
+	font-size: 16px;
+
+	text-align: center;
+
+	color: #0DB50D;
+	border: none;
+	outline: none;
+	background: red;
+	margin-bottom: 10px;
+
+
+	&:hover{
+		background: #0DB50D;
+		color: red;
+	}
+}
+
+.map-form-field.error{
+	background: red;
+	color: #0DB50D;
+	label{
+		color: #0DB50D;
+	}
+}
